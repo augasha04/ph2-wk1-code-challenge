@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import MyForm from './components/TransactionForm';
 import TransactionTable from './components/TransactionTable';
 
 
@@ -10,6 +10,7 @@ function App() {
     
     <div className="App">
     <TransactionTable />
+    <MyForm />
     </div>
   );
 }
