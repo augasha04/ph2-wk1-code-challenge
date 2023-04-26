@@ -4,7 +4,7 @@ function TransactionTable() {
 
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:3003/transactions')
+    fetch('https://my-json-server.typicode.com/augasha04/ph2-wk1-code-challenge/transactions')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.log(error));

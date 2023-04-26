@@ -16,7 +16,7 @@ function MyForm(){
         setData(NewData)
         console.log (NewData)
       }
-      fetch("http://localhost:3003/transactions", {
+      fetch("https://my-json-server.typicode.com/augasha04/ph2-wk1-code-challenge/transactions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
