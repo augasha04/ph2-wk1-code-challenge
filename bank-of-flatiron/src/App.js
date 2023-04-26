@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import MyForm from './components/TransactionForm';
 import TransactionTable from './components/TransactionTable';
@@ -12,6 +13,7 @@ function App() {
     <TransactionTable />
     <MyForm />
     </div>
+
   );
 }
 

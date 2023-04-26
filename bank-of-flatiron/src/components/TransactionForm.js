@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 
 function MyForm(){
+
     const[data,setData]=useState({
         date:"",
         description:"",
         category :"",
         amount:"",
     })
-    // const[Id,setId]=useState([]);
-    // const[Date,setDate]=useState([]);
-    // const[Description,setDescription]=useState([]);
-    // const[Category,setCategory]=useState([]);
-    // const[Amount,setAmount]=useState([]);
+
     function handleSubmit(e) {
         e.preventDefault();
         const NewData={...data}
@@ -28,6 +25,20 @@ function MyForm(){
   })
     .then((r) => r.json())
     .then((data) => console.log(data));
+
+    // const handleDelete = (id) => {
+    //     fetch(`http://localhost:3003/transactions/${id}`, {
+    //       method: 'DELETE'
+    //     })
+    //     .then(res => res.json())
+    //     .then(() => {
+    //       const updatedTransactions = transactions.filter(transaction => transaction.id !== id);
+    //       setTransactions(updatedTransactions);
+    //     })
+    //     .catch(err => console.error(err));
+    //   }
+
+
   return (
     <div className='transform'>
         <form>
@@ -42,4 +53,5 @@ function MyForm(){
     </div>
   )
 }
+
 export default MyForm;
